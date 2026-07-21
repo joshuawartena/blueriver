@@ -31,7 +31,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Ramaraja&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
 <style>
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-  :root{--navy:#242d5b;--blue:#364a84;--slate:#7786ae;--light:#b8c4d8;--white:#ffffff;--offwhite:#f5f6f9;--text:#1a1e2e;--rule:1px solid rgba(119,134,174,0.25);}
+  :root{--navy:#242d5b;--blue:#364a84;--slate:#5f6b8b;--light:#b8c4d8;--white:#ffffff;--offwhite:#f5f6f9;--text:#1a1e2e;--rule:1px solid rgba(119,134,174,0.25);}
   html{scroll-behavior:smooth;overflow-x:hidden;}
   body{font-family:'Raleway',sans-serif;color:var(--text);background:var(--white);overflow-x:hidden;max-width:100%;}
   nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--white);border-bottom:1px solid rgba(119,134,174,0.25);height:88px;transition:height 0.35s ease,box-shadow 0.35s ease;display:flex;align-items:center;justify-content:space-between;padding:0 48px;}
@@ -78,14 +78,14 @@
   .section-eyebrow{font-size:10px;font-weight:600;letter-spacing:0.3em;text-transform:uppercase;color:var(--slate);margin-bottom:14px;display:flex;align-items:center;gap:10px;}
   .section-eyebrow::before{content:'';width:24px;height:1px;background:var(--slate);}
   .section-title{font-family:'Ramaraja',serif;font-size:clamp(28px,4vw,44px);color:var(--navy);line-height:1.1;margin-bottom:16px;}
-  .about-text .section-body{max-width:480px;margin-bottom:32px;font-size:15px;font-weight:300;line-height:1.8;color:#4a5068;}
+  .about-text .section-body{max-width:480px;margin-bottom:32px;font-size:17px;font-weight:300;line-height:1.8;color:#4a5068;}
   .about-credentials{display:flex;flex-direction:column;gap:10px;margin-bottom:32px;}
   .credential{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:500;color:var(--navy);letter-spacing:0.04em;}
   .credential::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--slate);flex-shrink:0;}
   .services{background:var(--navy);position:relative;overflow:hidden;padding:96px 48px;}
   .services::before{content:'';position:absolute;top:-60px;left:0;right:0;height:80px;background:var(--offwhite);clip-path:polygon(0 0,100% 0,100% 100%);}
   .services-inner{max-width:1100px;margin:0 auto;}
-  .services .section-body{color:rgba(255,255,255,0.6);margin-bottom:56px;font-size:15px;font-weight:300;line-height:1.8;max-width:560px;}
+  .services .section-body{color:rgba(255,255,255,0.6);margin-bottom:56px;font-size:17px;font-weight:300;line-height:1.8;max-width:560px;}
   .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;}
   .service-card{background:var(--offwhite);border:var(--rule);padding:40px 32px;text-decoration:none;transition:background 0.2s,box-shadow 0.2s;position:relative;overflow:hidden;}
   .service-card::after{content:'';position:absolute;bottom:0;left:0;width:0;height:3px;background:var(--blue);transition:width 0.3s;}
@@ -93,14 +93,14 @@
   .service-card:hover::after{width:100%;}
   .service-icon{width:36px;height:36px;margin-bottom:20px;opacity:0.6;}
   .service-name{font-family:'Ramaraja',serif;font-size:20px;color:var(--navy);margin-bottom:10px;}
-  .service-desc{font-size:13px;font-weight:300;line-height:1.7;color:#5a6080;}
+  .service-desc{font-size:15px;font-weight:300;line-height:1.7;color:#5a6080;}
   .service-arrow{display:inline-block;margin-top:20px;font-size:11px;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--blue);text-decoration:none;}
   .testimonials{padding:96px 48px;}
   .testimonials-inner{max-width:1100px;margin:0 auto;}
   .testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:56px;}
   .testimonial{border:var(--rule);padding:36px;position:relative;background:var(--offwhite);}
   .testimonial::before{content:'“';font-family:'Ramaraja',serif;font-size:72px;color:var(--light);position:absolute;top:16px;left:28px;line-height:1;}
-  .testimonial-text{font-size:14px;font-weight:300;line-height:1.8;color:#3a3f55;margin-top:24px;margin-bottom:24px;position:relative;z-index:1;}
+  .testimonial-text{font-size:16px;font-weight:300;line-height:1.8;color:#3a3f55;margin-top:24px;margin-bottom:24px;position:relative;z-index:1;}
   .testimonial-author{display:flex;align-items:center;gap:10px;border-top:var(--rule);padding-top:18px;}
   .testimonial-stars{color:#f59e0b;font-size:13px;letter-spacing:2px;margin-bottom:4px;}
   .testimonial-name{font-size:12px;font-weight:600;letter-spacing:0.08em;color:var(--navy);text-transform:uppercase;}
@@ -112,11 +112,11 @@
   .map-wrap iframe{width:100%;height:100%;border:0;display:block;filter:grayscale(20%);}
   .form-group{margin-bottom:20px;}
   .form-label{display:block;font-size:10px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--slate);margin-bottom:7px;}
-  .form-input{width:100%;padding:12px 16px;background:var(--white);border:1px solid rgba(119,134,174,0.3);border-radius:2px;font-family:'Raleway',sans-serif;font-size:14px;color:var(--text);outline:none;transition:border-color 0.2s;}
+  .form-input{width:100%;padding:12px 16px;background:var(--white);border:1px solid rgba(119,134,174,0.3);border-radius:2px;font-family:'Raleway',sans-serif;font-size:16px;color:var(--text);outline:none;transition:border-color 0.2s;}
   .form-input:focus{border-color:var(--blue);}
   textarea.form-input{resize:vertical;min-height:110px;}
   .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
-  .contact-form-wrap .section-body{margin-bottom:36px;color:#5a6080;font-size:15px;font-weight:300;line-height:1.8;}
+  .contact-form-wrap .section-body{margin-bottom:36px;color:#5a6080;font-size:17px;font-weight:300;line-height:1.8;}
   footer{background:var(--navy);padding:56px 48px 32px;border-top:1px solid rgba(119,134,174,0.15);}
   .footer-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:48px;padding-bottom:40px;border-bottom:1px solid rgba(119,134,174,0.15);margin-bottom:28px;}
   .footer-logo{height:64px;width:auto;margin-bottom:16px;display:block;}
@@ -297,6 +297,14 @@
 
   /* Mobile: reveal hamburger — placed after base rule so it wins the cascade */
   @media (max-width: 900px) { .nav-hamburger { display: flex; } }
+
+/* --- a11y pass: contrast on dark backgrounds + type sizing --- */
+.services .section-eyebrow::before{background:var(--light);}
+.page-hero .page-eyebrow{color:var(--light);}
+.page-hero .page-eyebrow::before{background:var(--light);}
+.footer-tagline,.footer-heading{color:var(--light);}
+.footer-links a{color:rgba(255,255,255,0.55);}
+.footer-bottom{color:rgba(255,255,255,0.6);}
 </style>
 <script type="application/ld+json">
 {
@@ -544,7 +552,7 @@
 
 <section class="services">
   <div class="services-inner">
-    <div class="section-eyebrow" style="color:var(--slate);">What We Do</div>
+    <div class="section-eyebrow" style="color:var(--light);">What We Do</div>
     <h2 class="section-title" style="color:var(--white);">Built For Every Stage<br>Of Your Home</h2>
     <p class="section-body">From foundations to finish work, Blue River handles residential projects of every scale across Utah County and beyond.</p>
     <div class="services-grid">

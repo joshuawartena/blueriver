@@ -30,7 +30,7 @@
 <meta name="twitter:image" content="https://blueriverutah.com/og-image.png">
 <link href="https://fonts.googleapis.com/css2?family=Ramaraja&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
 <style>*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-  :root{--navy:#242d5b;--blue:#364a84;--slate:#7786ae;--light:#b8c4d8;--white:#ffffff;--offwhite:#f5f6f9;--text:#1a1e2e;--rule:1px solid rgba(119,134,174,0.25);}
+  :root{--navy:#242d5b;--blue:#364a84;--slate:#5f6b8b;--light:#b8c4d8;--white:#ffffff;--offwhite:#f5f6f9;--text:#1a1e2e;--rule:1px solid rgba(119,134,174,0.25);}
   html{scroll-behavior:smooth;}
   body{font-family:'Raleway',sans-serif;color:var(--text);background:var(--white);overflow-x:hidden;}
   nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--white);border-bottom:1px solid rgba(119,134,174,0.25);height:88px;transition:height 0.35s ease,box-shadow 0.35s ease;display:flex;align-items:center;justify-content:space-between;padding:0 48px;}
@@ -88,9 +88,9 @@
   .service-body{max-width:1100px;margin:0 auto;padding:80px 48px 0;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
   .service-photo{aspect-ratio:4/3;border-radius:2px;box-shadow:0 20px 60px rgba(36,45,91,0.15);position:relative;background-size:cover;background-position:center;}
   .service-photo::before{content:'';position:absolute;bottom:-12px;right:-12px;width:80px;height:80px;border-right:3px solid var(--blue);border-bottom:3px solid var(--blue);}
-  .service-content p{font-size:15px;font-weight:300;line-height:1.85;color:#4a5068;margin-bottom:20px;}
+  .service-content p{font-size:17px;font-weight:300;line-height:1.85;color:#4a5068;margin-bottom:20px;}
   .feature-list{list-style:none;margin:28px 0;display:flex;flex-direction:column;gap:10px;}
-  .feature-list li{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:400;color:var(--navy);}
+  .feature-list li{display:flex;align-items:center;gap:10px;font-size:16px;font-weight:400;color:var(--navy);}
   .feature-list li::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--blue);flex-shrink:0;}
   .back-link{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--slate);text-decoration:none;margin-bottom:36px;}
   .back-link:hover{color:var(--navy);}
@@ -99,7 +99,7 @@
   .service-photos-inner .gallery-grid{margin-top:40px;}
   .service-cta{padding:64px 48px;text-align:center;background:var(--navy);}
   .service-cta .section-title{color:var(--white);margin-bottom:12px;}
-  .service-cta p{color:rgba(255,255,255,0.6);font-size:15px;font-weight:300;margin-bottom:32px;}
+  .service-cta p{color:rgba(255,255,255,0.6);font-size:17px;font-weight:300;margin-bottom:32px;}
   /* ── HAMBURGER ── */
   .nav-hamburger {
     display: none;
@@ -234,6 +234,14 @@
   }
   nav.scrolled .nav-logo { height: 42px; }
 
+
+/* --- a11y pass: contrast on dark backgrounds + type sizing --- */
+.services .section-eyebrow::before{background:var(--light);}
+.page-hero .page-eyebrow{color:var(--light);}
+.page-hero .page-eyebrow::before{background:var(--light);}
+.footer-tagline,.footer-heading{color:var(--light);}
+.footer-links a{color:rgba(255,255,255,0.55);}
+.footer-bottom{color:rgba(255,255,255,0.6);}
 </style>
 </head>
 <body>

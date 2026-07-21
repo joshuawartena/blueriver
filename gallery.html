@@ -31,7 +31,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Ramaraja&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
 <style>
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-  :root{--navy:#242d5b;--blue:#364a84;--slate:#7786ae;--light:#b8c4d8;--white:#ffffff;--offwhite:#f5f6f9;--text:#1a1e2e;--rule:1px solid rgba(119,134,174,0.25);}
+  :root{--navy:#242d5b;--blue:#364a84;--slate:#5f6b8b;--light:#b8c4d8;--white:#ffffff;--offwhite:#f5f6f9;--text:#1a1e2e;--rule:1px solid rgba(119,134,174,0.25);}
   html{scroll-behavior:smooth;}
   body{font-family:'Raleway',sans-serif;color:var(--text);background:var(--white);overflow-x:hidden;}
   nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--white);border-bottom:1px solid rgba(119,134,174,0.25);height:88px;transition:height 0.35s ease,box-shadow 0.35s ease;display:flex;align-items:center;justify-content:space-between;padding:0 48px;}
@@ -240,6 +240,14 @@
   }
   nav.scrolled .nav-logo { height: 42px; }
 
+
+/* --- a11y pass: contrast on dark backgrounds + type sizing --- */
+.services .section-eyebrow::before{background:var(--light);}
+.page-hero .page-eyebrow{color:var(--light);}
+.page-hero .page-eyebrow::before{background:var(--light);}
+.footer-tagline,.footer-heading{color:var(--light);}
+.footer-links a{color:rgba(255,255,255,0.55);}
+.footer-bottom{color:rgba(255,255,255,0.6);}
 </style>
 </head>
 <body>
